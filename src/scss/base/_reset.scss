@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+ul{
+    list-style: none;
+}
+$flex: flex,inline-flex;
+@each $i in $flex{
+    .d-#{$i}{
+        display:$i;
+    }
+}
+$justify:start,end,center,space-between,space-around,evenly;
+@each $i in $justify{
+    .justify-content-#{$i}{
+        justify-content:$i;
+    }
+}
+$align-items:start,end,center,baseline,stretch;
+@each $i in $align-items {
+    .align-items-#{$i}{
+        align-items:$i;
+    }
+    
+}
+.btn {
+    padding: 0.375rem 0.75rem;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    margin: 10px 5px;
+    color: $white;
+    display: inline-block;
+    border-radius: 0.25rem;
+    border: 2px solid transparent;
+    background-color: transparent;
+}
+$btn-colors: 
+"primary" $primary,
+"secondary" $secondary,
+"success" $success,
+"danger" $danger,
+"warning" $warning,
+"info" $info,
+"light" $light,
+"dark" $dark,
+"pink" $pink,
+"orange" $orange;
+@each $i ,$btn-color in  $btn-colors {
+    .btn-#{$i}{
+        background-color: $btn-color;
+        text-transform: capitalize;
+    }
+}
+@each $i ,$btn-color in  $btn-colors {
+    .btn-outline-#{$i}{
+        color: $btn-color;
+        border-color: $btn-color;
+        text-transform: capitalize;
+    }
+}
+$btn-colors-hover: 
+"primary" $primary-hover,
+"secondary" $secondary-hover,
+"success" $success-hover,
+"danger" $danger-hover,
+"warning" $warning-hover,
+"info" $info-hover,
+"light" $light-hover,
+"dark" $dark-hover,
+"pink" $pink-hover,
+"orange" $orange-hover;
+
+
+@each $i, $hover in $btn-colors-hover {
+    .btn-#{$i}:hover {
+     background-color: $hover;
+     text-transform: capitalize;
+    }
+  }
+  @each $i, $hover in $btn-colors-hover {
+    .btn-outline-#{$i}:hover {
+     background-color: $hover;
+     color: $white;
+     text-transform: capitalize;
+    }
+  }
+  .bg{
+      background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    &:before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top:0;
+        left: 0;
+        opacity: 0.75;
+        background-color: $common_color;
+        z-index: -1;
+    }
+  }
+$text-align:left,center,right,justify;
+@each $i in $text-align{
+    .text-#{$i}{
+        text-align: $i;
+    }
+}
+@for $i from 0 through  100{
+    .pt-#{$i}{
+        padding-top:$i*0.25rem;
+    };
+    .mt-#{$i}{
+        margin-top:$i*0.25rem;
+    };
+    .pb-#{$i}{
+        padding-bottom:$i*0.25rem;
+    };
+    .mb-#{$i}{
+        margin-bottom:$i*0.25rem;
+    };
+    .pr-#{$i}{
+        padding-right:$i*0.25rem;
+    };
+    .mr-#{$i}{
+        margin-right:$i*0.25rem;
+    };
+    .pl-#{$i}{
+        padding-left:$i*0.25rem;
+    };
+    .ml-#{$i}{
+        margin-left:$i*0.25rem;
+    };
+  
+}
+.mx-auto{
+    margin: 0 auto;
+}
+

@@ -1,0 +1,63 @@
+.project-area{
+    .col-xxl-4{
+        padding: 0;
+    }
+
+.single-project{
+   
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    &:hover{
+        .project-content{
+            opacity: 1;
+            visibility: visible;
+    transform: scale(1);
+        }
+    }
+    .project-content{
+        color: $white;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0.5s;
+        &:before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            z-index: -1;
+            opacity: 0.75;
+        }
+        .iconDesign{
+            color: $white;
+            font-size: 25px;
+        }
+        h4{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 10px;
+            text-transform: capitalize;
+            span{
+                display: block;
+                font-size: 15px;
+                font-weight: 400;
+                margin-top: 5px;
+                text-transform: lowercase;
+            }
+        }
+    }
+
+    }
+}
