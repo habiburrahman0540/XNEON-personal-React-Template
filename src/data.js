@@ -1,7 +1,40 @@
+export const BannerData ={
+    bannerImg:require("./assets/img/banner/banner-2.jpg").default,
+    name:"I am Habibur Rahman",
+    designation:"Developer ,Freelancer And Writter"
+}
+export const AboutData ={
+    aboutImg:require("./assets/img/about/about-me.png").default,
+    title:"About Me",
+    subTitle:"I Am Web Desiner And Developer.",
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veniam expedita voluptatum asperiores similique praesentium non! Sed error similique sunt aspernatur, odio eveniet ad fuga quos possimus quisquam libero necessitatibus!"
+}
+export const expertise=[
+    {
+        name:"HTML"
+    },
+    {
+        name:"CSS"
+    },
+    {
+        name:"SCSS"
+    },
+    {
+        name:"BOOTSTARP"
+    },
+    {
+        name:"REACT"
+    },
+    {
+        name:"VUE JS"
+    },
+    {
+        name:"DJANGO"
+    },
+]
 
 export const serviceHeading=
     {
-      
         title:"What I Do....",
         description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, cumque fuga in minima hic maxime id odit. Quidem at nihil deleniti id mollitia, voluptates expedita voluptate veritatis asperiores! Sapiente, obcaecati?"
     }
