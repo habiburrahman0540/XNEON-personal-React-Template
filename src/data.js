@@ -195,4 +195,39 @@ export const TestimonialsHeading =
         degination:"Web Developer"
     }
 ];
+export const PriceHeading =
+    {
+        title:"Latest Price",
+        description:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sequi alias nostrum recusandae molestiae vero magnam officia, eos voluptatem voluptas dolore architecto cupiditate illum ex doloribus aliquid exercitationem officiis asperiores?"
+    };
+export const PriceData =[
+    {
+        name:"Basic",
+        price:"$99",
+        pageNo:"10 pages website design",
+        free:"Free 1 year domain",
+        database: "2 MYSQL database",
+        hosting:"10GB free web hosting",
+        support:"24/7 support"
+    },
+    {
+        name:"Standard",
+        price:"$200",
+        pageNo:"20 pages website design",
+        free:"Free 2 years domain",
+        database: "Unlimited MYSQL database",
+        hosting:"20GB free web hosting",
+        support:"24/7 support"
+    },
+    {
+        name:"Premium",
+        price:"$299",
+        pageNo:"20 pages website design",
+        free:"Free 2 years domain",
+        database: "Unlimited MYSQL database",
+        hosting:"Unlimited free web hosting",
+        support:"24/7 support"
+    }
+]
+
 

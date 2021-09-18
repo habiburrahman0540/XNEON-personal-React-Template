@@ -7,6 +7,7 @@ import Project from "../components/Projects";
 import Counter from "../components/CounterSection";
 import Timeline from "../components/TimeLine";
 import Clients from "../components/Clients"
+import Price from '../components/Price';
 const HomePage = () => {
     return (
         <div>
@@ -18,6 +19,7 @@ const HomePage = () => {
       <Counter/>
       <Timeline/>
       <Clients/>
+      <Price/>
         </div>
     );
 };

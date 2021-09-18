@@ -1,0 +1,39 @@
+.price-area{
+    background-color: $gray;
+    .single-price{
+        background-color: $white;
+        padding: 30px;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        line-height: 50px;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(104, 167, 167);
+            color: $white;
+            
+        }
+        .active{
+            background-color: chocolate;
+          
+        }
+        span{
+            display: block;
+            font-size: 30px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        h4{
+            font-size: 49px;
+            padding: 7px;
+            font-weight: 600;
+        }
+        ul{
+            margin-bottom: 15px;
+            li{
+                font-size: 17px;
+                text-transform: capitalize;
+                border-bottom: 1px solid #ddd;
+            }
+        }
+    }
+}
