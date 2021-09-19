@@ -1,21 +1,24 @@
 .price-area{
     background-color: $gray;
+  
     .single-price{
-        background-color: $white;
+       background-color: $white;
         padding: 30px;
         border: 2px solid #ddd;
         border-radius: 10px;
         line-height: 50px;
         cursor: pointer;
+        transition: 0.5s;
+     &:nth-last-col(3){
+         background-color: blue;
+     }
         &:hover{
             background-color: rgb(104, 167, 167);
             color: $white;
+            border: 3px solid $white;
             
         }
-        .active{
-            background-color: chocolate;
-          
-        }
+        
         span{
             display: block;
             font-size: 30px;
@@ -33,7 +36,39 @@
                 font-size: 17px;
                 text-transform: capitalize;
                 border-bottom: 1px solid #ddd;
+                &:last-child{
+                    border-bottom: none;
+                    padding-bottom: none;
+                    margin-bottom: none;
+                }
+                &:nth-last-child(1){
+                    background-color: darkgoldenrod;
+                    border-radius: 10px;
+                    border: none;
+                }
+                &:nth-last-child(2){
+                    background-color: rgb(126, 72, 170);
+                    border-radius: 10px;
+                    border: none;
+                }
+                &:nth-last-child(3){
+                    background-color: rgb(72, 164, 170);
+                    border-radius: 10px;
+                    border: none;
+                }
+                &:nth-last-child(4){
+                    background-color: rgb(170, 72, 146);
+                    border-radius: 10px;
+                    border: none;
+                }
+                &:nth-last-child(5){
+                    background-color: rgb(192, 155, 139);
+                    border-radius: 10px;
+                    border: none;
+                }
             }
         }
     }
+   
+ 
 }

@@ -8,6 +8,7 @@ import Counter from "../components/CounterSection";
 import Timeline from "../components/TimeLine";
 import Clients from "../components/Clients"
 import Price from '../components/Price';
+import Team from '../components/Team';
 const HomePage = () => {
     return (
         <div>
@@ -20,6 +21,7 @@ const HomePage = () => {
       <Timeline/>
       <Clients/>
       <Price/>
+      <Team/>
         </div>
     );
 };

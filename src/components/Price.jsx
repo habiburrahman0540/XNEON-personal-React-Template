@@ -13,8 +13,8 @@ const Price = () => {
                 <div className="row">
                     {PriceData.map((item,index)=>{
                         return(
-                            <div className="col-xxl-4 text-center" >
-                            <div className="single-price">
+                            <div className="col-xxl-4 text-center" key={index} >
+                            <div className="single-price bg-color">
                                 <span>{item.name}</span>
                                 <h4>{item.price}</h4>
                                 <ul>

@@ -228,6 +228,40 @@ export const PriceData =[
         hosting:"Unlimited free web hosting",
         support:"24/7 support"
     }
+];
+export const TeamHeading = {
+    title:"My team",
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sequi alias nostrum recusandae molestiae vero magnam"
+};
+export const TeamData =[
+    {
+        imageUrl:require("./assets/img/team/1.jpg").default,
+        name:"Habibur Rahman",
+        desiganation:"Web designer",
+        icon_1:"facebook",
+        icon_2:"twitter",
+        icon_3:"youtube",
+        icon_4:"linkedin",
+    },
+    {
+        imageUrl:require("./assets/img/team/2.jpg").default,
+        name:"Habibur Rahman",
+        desiganation:"Web Developer",
+        icon_1:"facebook",
+        icon_2:"twitter",
+        icon_3:"youtube",
+        icon_4:"linkedin",
+    },
+    {
+        imageUrl:require("./assets/img/team/3.jpg").default,
+        name:"Habibur Rahman",
+        desiganation:"Web Developer",
+        icon_1:"facebook",
+        icon_2:"twitter",
+        icon_3:"youtube",
+        icon_4:"linkedin",
+    }
 ]
+
 
 
